@@ -121,10 +121,10 @@ namespace Intersect.Server.Web.RestApi.Configuration
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public bool DebugMode { get; private set; } = false;
 
-#if DEBUG
+//#if DEBUG
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public bool SeedMode { get; private set; }
-#endif
+//#endif
 
         [JsonProperty(
             NullValueHandling = NullValueHandling.Ignore, DefaultValueHandling = DefaultValueHandling.Include

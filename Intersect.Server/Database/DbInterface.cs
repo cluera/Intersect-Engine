@@ -264,12 +264,12 @@ namespace Intersect.Server.Database
             }
 
             sPlayerDb.MigrationsProcessed(processedPlayerMigrations.ToArray());
-#if DEBUG
+//#if DEBUG
             if (ServerContext.Instance.RestApi.Configuration.SeedMode)
             {
                 sPlayerDb.Seed();
             }
-#endif
+//#endif
 
             if (serverContext.RestApi.Configuration.RequestLogging)
             {

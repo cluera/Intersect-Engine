@@ -137,11 +137,11 @@ namespace Intersect.Server.Database.PlayerData
 
         public void Seed()
         {
-#if DEBUG
+//#if DEBUG
             new SeedUsers().SeedIfEmpty(this);
 
             SaveChanges();
-#endif
+//#endif
         }
 
         public override void MigrationsProcessed(string[] migrations)
